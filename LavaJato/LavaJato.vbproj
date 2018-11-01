@@ -77,9 +77,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LAVAJATODataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="LAVAJATODataSet.vb">
-      <DependentUpon>LAVAJATODataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +99,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Servico.Designer.vb">
+      <DependentUpon>Servico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servico.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Principal.resx">
@@ -113,6 +116,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Servico.resx">
+      <DependentUpon>Servico.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="LAVAJATODataSet.xsc">
@@ -120,8 +126,8 @@
     </None>
     <None Include="LAVAJATODataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>LAVAJATODataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="LAVAJATODataSet.xss">
       <DependentUpon>LAVAJATODataSet.xsd</DependentUpon>
@@ -131,7 +137,9 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\DataSources\LavaJato.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\LavaJato.My.MyApplication11.datasource" />
     <None Include="My Project\DataSources\LavaJato.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\LavaJato.My.MySettings11.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>

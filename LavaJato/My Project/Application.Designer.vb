@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.LavaJato.Principal
+            Me.MainForm = Global.LavaJato.FrmCliente
         End Sub
     End Class
 End Namespace
